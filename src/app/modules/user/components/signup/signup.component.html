@@ -1,0 +1,25 @@
+<div class="signup-container">
+  <h3>Sign up here...</h3>
+  <form #userForm="ngForm" (ngSubmit)="signUp(userForm)" class="signup-form">
+    <div>
+      <label for="userName">Name :</label>
+      <input id="userName" type="text" name="userName" ngModel />
+    </div>
+    <div>
+      <label for="userEmail">Email :</label>
+      <input id="userEmail" type="email" name="userEmail" ngModel />
+    </div>
+    <div>
+      <label for="userPassword">Password :</label>
+      <input id="userPassword" type="password" name="userPassword" ngModel />
+    </div>
+
+    <button mat-flat-button type="submit">Sign up</button>
+    <div>
+      <p>
+        Already a member?
+        <a class="signup-btn1" routerLink="/"> Log In </a>
+      </p>
+    </div>
+  </form>
+</div>

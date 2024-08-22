@@ -1,0 +1,21 @@
+<div class="signup-container">
+  <h3>Login here...</h3>
+  <form #userForm="ngForm" (ngSubmit)="login(userForm)" class="signup-form">
+    <div>
+      <label for="userEmail">Email :</label>
+      <input id="userEmail" type="email" name="userEmail" ngModel />
+    </div>
+    <div>
+      <label for="userPassword">Password :</label>
+      <input id="userPassword" type="password" name="userPassword" ngModel />
+    </div>
+
+    <button mat-flat-button type="submit">Login</button>
+    <div>
+      <p>
+        Don’t have an account?
+        <a class="signup-btn1" routerLink="/signup"> Sign Up </a>
+      </p>
+    </div>
+  </form>
+</div>
