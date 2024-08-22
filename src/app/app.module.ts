@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './modules/shared/header/header.component';
+import { ToastrModule } from 'ngx-toastr';
+import { TaskModule } from './modules/tasks/tasks.module';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,10 @@ import { HeaderComponent } from './modules/shared/header/header.component';
     MatToolbarModule,
     HttpClientModule,
     FormsModule,
-    
-    UserModule
+    ToastrModule.forRoot(),
+
+    UserModule,
+    TaskModule
     
   ],
   providers: [],

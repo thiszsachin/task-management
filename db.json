@@ -1,10 +1,11 @@
 {
   "users": [
     {
-      "id": "6055",
+      "id": "60a9",
       "userName": "Sachin",
       "userEmail": "sachin@gmail.com",
-      "userPassword": "zesxfdc"
+      "userPassword": "123456",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozMjUsInVzZXJuYW1lIjoiU2F5YW5yYWogR3VoYSIsInJvbGVfbmFtZSI6WyJCdXllcnMiLCJBdXRob3IiXSwidGVuYW50aWQiOjgsImlhdCI6MTcyMzAyMTIzOH0.PX3lad_xwCxb3FAwChyvnIsIx8trQtlLQW9_qPB10AY"
     }
   ]
 }

@@ -4,12 +4,20 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: 'home',
+    loadChildren: () =>
+      import('./modules/tasks/tasks.module').then(
+        (m) => m.TaskModule
+      )
+  },
+  {
+    path: 'auth',
     loadChildren: () =>
       import('./modules/user/user.module').then(
         (m) => m.UserModule
       )
-  },
+  }
+ 
 ];
 
 @NgModule({

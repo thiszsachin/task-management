@@ -3,18 +3,24 @@
   <form #userForm="ngForm" (ngSubmit)="login(userForm)" class="signup-form">
     <div>
       <label for="userEmail">Email :</label>
-      <input id="userEmail" type="email" name="userEmail" ngModel />
+      <input id="userEmail" type="email" name="userEmail" required ngModel />
     </div>
     <div>
       <label for="userPassword">Password :</label>
-      <input id="userPassword" type="password" name="userPassword" ngModel />
+      <input
+        id="userPassword"
+        type="password"
+        name="userPassword"
+        required
+        ngModel
+      />
     </div>
 
     <button mat-flat-button type="submit">Login</button>
     <div>
       <p>
         Don’t have an account?
-        <a class="signup-btn1" routerLink="/signup"> Sign Up </a>
+        <a class="signup-btn1" routerLink="/auth/signup"> Sign Up </a>
       </p>
     </div>
   </form>
