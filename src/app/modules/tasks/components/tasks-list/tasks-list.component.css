@@ -1,0 +1,21 @@
+.edit-btn{
+    margin-right: 10px;
+    line-height: 1;
+  min-width: 0;
+  padding: 2px 10px 2px;
+}
+mat-card{
+    margin: 5%;
+    /* background-color: rgb(194, 193, 193); */
+}
+mat-card-header{
+    display: flex;
+    justify-content: end;
+}
+.add-btn{
+    background-color: #55c2da;
+    align-self: flex-end;
+    color: white;
+    float: right;
+    margin: 5px;
+}

@@ -12,6 +12,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { ToastrModule } from 'ngx-toastr';
 import { TaskModule } from './modules/tasks/tasks.module';
+// import {MatTableModule} from '@angular/material/table';
+// import {MatPaginatorModule} from '@angular/material/paginator';
+// import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [

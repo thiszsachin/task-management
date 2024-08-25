@@ -1,0 +1,62 @@
+<mat-dialog-actions>
+  <h2 mat-dialog-title>{{ data.type }} Task</h2>
+  <div>
+    <button mat-raised-button mat-dialog-close class="close-btn">Close</button>
+    <button mat-button cdkFocusInitial>Clear</button>
+  </div>
+</mat-dialog-actions>
+<mat-dialog-content>
+  <form
+    [formGroup]="taskForm"
+    (ngSubmit)="addTask()"
+    class="task-form signup-form"
+  >
+    <mat-form-field class="task-field">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter Text"
+        id="name "
+        formControlName="name"
+        type="text"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-form-field class="task-field">
+      <mat-label>Description</mat-label>
+      <input
+        matInput
+        placeholder="Enter Text"
+        id="description"
+        formControlName="description"
+        type="text"
+        name="description"
+      />
+    </mat-form-field>
+    <mat-form-field class="task-field">
+      <mat-label>Status</mat-label>
+      <input
+        matInput
+        placeholder="Enter Text"
+        id="status"
+        formControlName="status"
+        type="text"
+        name="status"
+      />
+    </mat-form-field>
+    <mat-form-field class="task-field">
+      <mat-label>Priority</mat-label>
+      <input
+        matInput
+        placeholder="Enter Text"
+        id="priority"
+        formControlName="priority"
+        type="text"
+        name="priority"
+      />
+    </mat-form-field>
+    <button mat-raised-button class="submit-btn">
+      {{ data.type == "Add" ? "Submit" : "Update" }}
+    </button>
+  </form>
+</mat-dialog-content>
